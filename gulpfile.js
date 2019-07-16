@@ -81,7 +81,6 @@ gulp.task('execute-tests', (callback) => {
 gulp.task('release', (callback) => {
 	runSequence(
 		'ensure-clean-working-directory',
-		'execute-node-tests',
 		'document',
 		'bump-version',
 		'commit-changes',
