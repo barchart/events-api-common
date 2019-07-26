@@ -1,6 +1,6 @@
 {
   "name": "@barchart/events-api-common",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "Common classes used by the Event system",
   "author": {
     "name": "Bryan Ingle",
