@@ -24,7 +24,6 @@ So, before data is exchanged, it must be converted to pure JSON. Conversely, whe
 This library has been published as a *public* module to NPM as [@barchart/events-api-common](https://www.npmjs.com/package/@barchart/events-api-common).
 
 ```shell
-npm login
 npm install @barchart/events-api-common -S
 ```
 
