@@ -1,7 +1,6 @@
 const gulp = require('gulp');
 
 const bump = require('gulp-bump'),
-	exec = require('child_process').exec,
 	git = require('gulp-git'),
 	gitStatus = require('git-get-status'),
 	jasmine = require('gulp-jasmine'),
@@ -27,15 +26,6 @@ gulp.task('bump-version', () => {
 	return gulp.src([ './package.json' ])
 		.pipe(bump({ type: 'patch' }))
 		.pipe(gulp.dest('./'));
-});
-
-gulp.task('document', (cb) => {
-	exec('jsdoc . -c jsdoc.json -r -d docs', (error, stdout, stderr) => {
-		console.log(stdout);
-		console.log(stderr);
-
-		cb();
-	});
 });
 
 gulp.task('commit-changes', () => {
@@ -69,7 +59,6 @@ gulp.task('execute-tests', gulp.series('execute-node-tests'));
 
 gulp.task('release', gulp.series(
 	'ensure-clean-working-directory',
-	'document',
 	'bump-version',
 	'commit-changes',
 	'push-changes',
@@ -77,7 +66,7 @@ gulp.task('release', gulp.series(
 ));
 
 gulp.task('lint', () => {
-	return gulp.src([ './**/*.js', './test/specs/**/*.js', '!./node_modules/**', '!./test/dist/**', '!./docs/**' ])
+	return gulp.src([ './**/*.js', './test/specs/**/*.js', '!./node_modules/**', '!./test/dist/**' ])
 		.pipe(jshint({'esversion': 6}))
 		.pipe(jshint.reporter('default'));
 });
