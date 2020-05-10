@@ -1,6 +1,6 @@
 # @barchart/events-api-common
 
-[![AWS CodeBuild]()]()
+[![AWS CodeBuild](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoicXh1c2JCQUxUczU5YTZrUnN0QVNTaTl0VDlQSElobFh4QS9ua2FJZnkvZW1kL0RXVzlub1FqM0d5M3ovNjNydUROTUpzK3FtT0pWSTBRZzFYTk83THBBPSIsIml2UGFyYW1ldGVyU3BlYyI6IkYzL1pjVmlYakp6SEN6VTMiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)](https://github.com/barchart/events-api-common)
 
 A *private* library of shared JavaScript code used by the [Barchart Event Tracking System](https://github.com/barchart/aws-lambda-events) and client SDK.
 
