@@ -13,8 +13,8 @@
     "url": "git+ssh://github.com/barchart/events-api-common.git"
   },
   "dependencies": {
-    "@barchart/common-js": "~3.3.0",
-    "uuid": "3.1.0"
+	"@barchart/common-js": "^3.5.1"
+	"uuid": "^3.4.0"
   },
   "devDependencies": {
     "git-get-status": "^1.0.5",
