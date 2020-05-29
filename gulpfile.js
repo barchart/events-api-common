@@ -4,7 +4,8 @@ const exec = require('child_process').exec,
 	git = require('gulp-git'),
 	gitStatus = require('git-get-status'),
 	jasmine = require('gulp-jasmine'),
-	jshint = require('gulp-jshint');
+	jshint = require('gulp-jshint'),
+	prompt = require('gulp-prompt');
 
 const fs = require('fs');
 
