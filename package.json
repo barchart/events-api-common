@@ -1,6 +1,6 @@
 {
   "name": "@barchart/events-api-common",
-  "version": "1.4.2",
+  "version": "1.4.1",
   "description": "Common classes used by the Barchart Event Tracking System",
   "author": {
     "name": "Bryan Ingle",
@@ -23,7 +23,7 @@
     "gulp-git": "^2.9.0",
     "gulp-jasmine": "^2.2.1",
     "gulp-jshint": "~2.1.0",
-    "jshint": "2.9.5"
+    "jshint": "^2.10.3"
   },
   "license": "MIT"
 }
